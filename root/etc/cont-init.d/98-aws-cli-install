@@ -1,5 +1,6 @@
 #!/usr/bin/with-contenv bash
 
+echo "*** Installing awscli ***"
 apt update
 if ! aws -v COMMAND &> /dev/null; then 
 
