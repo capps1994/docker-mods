@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "capps1994/codeserverawsmod"
+  ENDPOINT: "capps1994/mods"
   BRANCH: "master"
 
 jobs:
