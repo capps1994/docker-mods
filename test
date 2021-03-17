@@ -1,0 +1,8 @@
+IMAGE_TAG=code-server-awscli
+docker build . -t $IMAGE_TAG
+docker run --rm \
+  --name=code-server \
+  -e TZ=Europe/London \
+  -e DOCKER_MODS=ghcr.io/capps1994/code-server-awscli:$IMAGE_TAG \
+  -p 8443:8443 \
+  ghcr.io/linuxserver/code-server
