@@ -1,9 +1,9 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+echo "*** Terraform Installer ***"
+echo "Checking terraform version"
 
-echo "*** AWSCLI Installer ***"
-echo "Checking if awscli is installed"
-
-if ! aws -v COMMAND &> /dev/null; then 
+if ! terr -v COMMAND &> /dev/null; then 
 
   echo "aws not installed, installing now..." 
     
