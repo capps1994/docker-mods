@@ -3,9 +3,9 @@ name: Build Image - my repo
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "capps1994/code-server-awscli" #don't modify
+  ENDPOINT: "capps1994/docker-mods" #don't modify
   BASEIMAGE: "code-server" #replace
-  MODNAME: "awscli" #replace
+  MODNAME: "terraform14" #replace
 
 jobs:
   build:
